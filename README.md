@@ -43,8 +43,11 @@ pyenv install 3.7.3
 sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
 ```
 
-### インストール確認
+### バージョン変更
 ```
-pyenv versions
+pyenv local 3.7.3
+
+# 全体に影響させたいのなら
+pyenv global 3.7.3
 ```
 
