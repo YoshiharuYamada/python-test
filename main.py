@@ -1,7 +1,13 @@
+import settings
+import os
 import urllib.request, urllib.error
 from bs4 import BeautifulSoup
 
-url = "https://mtg-jp.com/products/card-gallery/0000001/423668"
+print('カードセットを入力')
+version = input();
+
+garally_url = os.getenv('GALLERY_URL')
+url = garally_url + "/" + version + "/423668"
 
 #get html
 html = urllib.request.urlopen(url)
